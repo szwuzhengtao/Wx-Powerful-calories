@@ -1,0 +1,57 @@
+<!--pages/message/message.wxml-->
+<view class='container3'>
+		<view class='middle-item'>
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+      <text class='text_1'>头像</text>
+		</view>
+    <view class="view_line"></view>
+		<view class='middle-item'>
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+      <text class='text_1'>昵称</text>
+      <text class='text_3'>{{userName}}</text>
+		</view>
+    <view class="view_line"></view>
+    <view class='middle-item'>
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+      <text class='text_1'>性别</text>
+      <text class='text_3'>男</text>
+		</view>
+    <view class="view_line"></view>
+    <view class='middle-item' >
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+      <text class='text_1'>出生日期</text>
+      <text class='text_2'>{{recipsdTime}}</text>
+		</view>
+	</view>
+  <view class='container4'>
+    <view class="view_line"></view>
+		<view class='middle-item'>
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+      <text class='text_1'>身高</text>
+      <text class='text_4'>{{height}}m</text>
+		</view>
+    <view class="view_line"></view>
+    <view class='middle-item'>
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+      <text class='text_1'>体重</text>
+      <text class='text_4'>{{weight}}kg</text>
+		</view>
+    <view class="view_line"></view>
+    <view class='middle-item' >
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+      <text class='text_1'>目标体重</text>
+      <text class='text_4'>{{targetWeight}}kg</text>
+		</view>
+    <view class='middle-item' >
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+      <text class='text_1'>食品偏好</text>
+      <text class='text_5'>{{preferFood}}</text>
+		</view>
+    <view class='middle-item' >
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+      <text class='text_1'>健身方向</text>
+      <text class='text_5'>{{fitnessGoad}}</text>
+		</view>
+	</view>
+
+

@@ -1,0 +1,94 @@
+<view class="K" style="background-color: #DED369;">
+
+<view class="K1" >
+<view class="circle" mode="widthFix">
+<text>早餐</text>
+</view>
+<view class="L" style="background-color: #E0475B;">
+<text>推荐摄入量</text>
+</view>
+</view>
+
+<view class="J">
+<view class="K2" wx:for="{{mnue.data.bf}}" wx:for-item='item'>
+<text class="t1">{{item}}</text>
+<text class="t2">{{p2}}g</text>
+<image mode="widthFix" style="width: 10%;margin-left: 20%;" src="../image/ze-arrow@1x.png"></image>
+</view>
+
+</view>
+
+
+</view>
+
+<!--午餐-->
+<view class="K" style="background-color: #F7F4EF;">
+
+<view class="K1" >
+<view class="circle" mode="widthFix"style="border:#FEAA00 solid 10rpx">
+<text>午餐</text>
+</view>
+<view class="L" style="background-color: #788402;">
+<text>推荐摄入量</text>
+</view>
+</view>
+
+<view class="J">
+
+<view class="K2" style=" border:#31525B 10rpx solid;" wx:for="{{mnue.data.lunch}}" wx:for-item='item'>
+<text class="t1">{{item}}</text>
+<text class="t2">{{p1}}g</text>
+<image mode="widthFix" style="width: 10%;margin-left: 10%;" src="../image/ze-arrow@1x.png"></image>
+</view>
+</view>
+
+
+</view>
+
+<!--晚餐-->
+<view class="K" style="background-color: #FFA998;">
+
+<view class="K1">
+<view class="circle" mode="widthFix"style="border:#18ACBA solid 10rpx">
+<text>晚餐</text>
+</view>
+<view class="L" style="background-color: #FFC397;">
+<text>推荐摄入量</text>
+</view>
+</view>
+
+<view class="J">
+<view class="K2" style=" border:#F76566 10rpx solid;"wx:for="{{mnue.data.dinner}}" wx:for-item='item'>
+<text class="t1">{{item}}</text>
+<text class="t2">{{p2}}g</text>
+<image mode="widthFix" style="width: 10%;margin-left: 20%;" src="../image/ze-arrow@1x.png"></image>
+</view>
+
+</view>
+
+
+</view>
+
+<!--加餐-->
+<view class="K" style="background-color: #B3DEE5;">
+
+<view class="K1">
+<view class="circle" mode="widthFix"style="border:#FFA101 solid 10rpx">
+<text>加餐</text>
+</view>
+<view class="L" style="background-color: #FAE6B1;">
+<text>推荐摄入量</text>
+</view>
+</view>
+
+<view class="J">
+<view class="K2"style=" border:#31525B 10rpx solid;"wx:for="{{extre}}" wx:for-item='item'>
+<text class="t1">{{item.eat}}</text>
+<text class="t2">{{item.ka}}g</text>
+<image mode="widthFix" style="width: 10%;margin-left: 10%;" src="../image/ze-arrow@1x.png"></image>
+</view>
+
+</view>
+
+
+</view>

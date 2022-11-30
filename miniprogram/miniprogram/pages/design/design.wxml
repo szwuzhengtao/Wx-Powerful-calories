@@ -1,0 +1,27 @@
+
+<view class="K2">
+<view class="K2t"style="display: flex; margin-top:2%">
+<text style="margin-left: 13%;">类型</text>
+<text style="margin-left: 29%;">推荐指数</text>
+</view>
+
+<view class="K21" style="display: flex; align-items: center;margin-top: 5%;">
+<text>肉类</text>
+<slider selected-color="#1684FC" bindchanging="sliderChanging" color="#E8E8E8"  block-size="13" style="width: 45%;margin-left: 20%;"></slider>
+</view>
+<view class="K21" style="display: flex; align-items: center;">
+<text>蔬菜</text>
+<slider selected-color="#1684FC" bindchanging="sliderChanging" color="#E8E8E8"  block-size="13" style="width: 45%;margin-left: 20%;"></slider>
+</view>
+<view class="K21" style="display: flex; align-items: center;">
+<text>水果</text>
+<slider selected-color="#1684FC" bindchanging="sliderChanging" color="#E8E8E8"  block-size="13" style="width: 45%;margin-left: 20%;"></slider>
+</view>
+<view class="K21" style="display: flex; align-items: center;">
+<text>谷物</text>
+<slider selected-color="#1684FC" bindchanging="sliderChanging" color="#E8E8E8"  block-size="13" style="width: 45%;margin-left: 20%;"></slider>
+</view>
+</view>
+<view class="continue" bindtap="test" style="border: solid;">
+<text>确认修改</text>
+</view>

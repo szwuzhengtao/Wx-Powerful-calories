@@ -1,0 +1,36 @@
+/* pages/love/love.wxss */
+.K2{
+  margin-left: 8%;
+  width: 84%;
+  margin-top: 5%;
+  height: 550rpx;
+  background-color:#EFEFEF ;
+  padding-bottom: 13%;
+  border-radius: 35rpx;
+  border: solid;
+}
+
+.continue{
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 30%;
+  height: 120rpx;
+  background-color: #FF8B00;
+  border-radius: 35rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.continue text{
+  font-size: 45rpx;
+  color: #FFFFFF;
+}
+
+.k{
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+}
+

@@ -1,0 +1,125 @@
+<!--index.wxml-->
+  <view class="K1" style="display: flex;">
+   <view class="K2" style="margin-left: 1%;">
+   <text>饮食摄入</text>
+   <view class="num1">{{d.data}}</view>
+  </view>
+
+  <view class="circle">
+    <view class="t">还可以摄入</view>
+    <view style="display: flex;">
+    <image mode="widthFix" style="width: 70rpx;margin-left: 10%;" src="../image/if-fire-burn@1x.png"></image>
+    <view class="t1">{{b.data-d.data}}</view>
+    </view>
+    <text>推荐摄入量{{b.data}}卡</text>
+  </view>
+
+  <view class="K2" >
+   <text>运动消耗</text>
+   <view class="num1">{{exed}}</view>
+  </view>
+  
+  </view>
+
+  <view class="last" style="display: flex;">
+  <view class="last1" >  
+   <image mode="widthFix" src="../image/iconPark-bread@1x.png"></image>
+   <text>+早餐</text>
+  </view>
+  <view  class="last1">  
+   <image mode="widthFix" src="../image/iconPark-noodles@1x.png"></image>
+   <text>+午餐</text>
+  </view>
+  <view  class="last1">  
+   <image mode="widthFix" src="../image/iconPark-nutrition@1x.png"></image>
+   <text>+晚餐</text>
+  </view>
+  <view  class="last1">  
+   <image mode="widthFix" src="../image/iconPark-apple-one@1x.png"></image>
+   <text>+加餐</text>
+  </view>
+  <view  class="last1">  
+   <image mode="widthFix" src="../image/if-runner-alt-1@1x.png"></image>
+   <text>+运动</text>
+  </view>
+  </view>
+
+  <!--今日饮食-->
+  <view class="today">
+  <view class="todayeat" style="display: flex;">
+  <image class="todayeati"  mode="widthFix" src="../image/haStroke-53-notebook-list@1x.png"></image>
+
+  <text >今日饮食</text>
+  <navigator style="text-align: center;margin-left: 20%;margin-top: 7%;width: 30%;" url="../love/love">
+  <text style=" font-size: 35rpx;">量身定制</text>
+  <image style="width:17%;"mode="widthFix" src="../image/ze-arrow@1x.png"></image>
+</navigator>
+  </view>
+  
+  <view class="all">
+  <text>合计： {{all}}卡</text>
+  </view>
+
+  <view class="todaylast" style="display: flex;">
+  
+  <view class="rice">
+    <view class="last2" style="display: flex;">
+    <image mode="widthFix" src="../image/iconPark-bread 2@1x.png"></image>
+    <text>早餐</text>
+  </view>
+
+    <view class="last2" style="display: flex;">
+    <image mode="widthFix" src="../image/iconPark-noodles 2@1x.png"></image>
+    <text>午餐</text>
+  </view>
+
+    <view class="last2" style="display: flex;">
+    <image mode="widthFix" src="../image/iconPark-nutrition Copy@1x.png"></image>
+    <text>晚餐</text>
+  </view>
+
+    <view class="last2" style="display: flex;">
+    <image mode="widthFix" src="../image/iconPark-apple-one Copy@1x.png"></image>
+    <text>加餐</text>
+  </view>
+  </view>
+
+  <view class="rice2" bindtap="test">
+   <text >{{mnue.data.recipe.breakfast}}</text>
+  <view class="line"></view>
+<text >{{mnue.data.recipe.lunch}}</text>
+<view class="line"></view>
+<text >{{mnue.data.recipe.dinner}}</text>
+<view class="line"></view>
+<text >{{mnue.data.extra.extraFood}}</text>
+<view class="line"></view>
+  </view>
+  </view>
+</view>
+
+ 
+ <!--昨日记录-->
+ <view class="lastday">
+  <view class="todayeat" style="display: flex;">
+  <text style="font-size: 35rpx;margin-top: 2%;margin-left: 10%;">昨日记录</text>
+  <text style="margin-left: 50%; font-size: 30rpx;margin-top: 3%;">详情</text>
+  <image style="width:5%;margin-top: 3.5%;"mode="widthFix" src="../image//ze-play@1x.png"></image>
+  </view>
+  <view style="display: flex;">
+  <view  class="lastdayn1">
+    <view class="last2" style="display: flex;margin-top: 3%;">
+    <image mode="widthFix" src="../image/if-fire-alt@1x.png"></image>
+    <text style="margin-top: 2%;">饮食摄入</text>
+  </view>
+  <text> {{lastdayeat}}</text>
+  </view>
+  <view  class="lastdayn1">
+    <view class="last2" style="display: flex;margin-top: 3%;">
+    <image mode="widthFix" src="../image/if-swimmer@1x.png"></image>
+    <text style="margin-top: 2%;">运动消耗</text>
+  </view>
+  <text> {{lastdayrun}}</text>
+  </view>
+</view>
+ </view>
+

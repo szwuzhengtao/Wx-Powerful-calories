@@ -1,0 +1,45 @@
+<!--pages/home/home.wxml-->
+<view class = "container">
+  <!--用户头像和昵称-->
+  <view class="userInformation">
+    <view class="userInformation2">
+      <view class="userInfomation-avatar">
+        <open-data type="userAvatarUrl" ></open-data>
+    </view>
+      <view class="userInformation-nickname" bindtap="test">
+        <open-data type="userNickName"></open-data>
+          <text style=" font-size: 30rpx; font-weight:normal;">\n编辑资料</text>
+          <image style="width:10%;"mode="widthFix" src="../image/icon_change.png"></image>
+    </view>
+  </view>
+  <view class="body">
+    <view class="c1">
+      <text style="font-size:12px;margin-top: 15%;">体重 （kg）</text>
+      <view class="num">99.2</view>
+    </view>
+    <view class="line1"></view>
+    <view class="c1">
+      <text style="font-size:12px;margin-top: 15%;">体脂率 （%）</text>
+      <view class="num">12.6</view>
+    </view>
+    <view class="line1"></view>
+    <view class="c1">
+      <text style="font-size:12px; margin-top: 15%;">目标体重 （kg）</text>
+      <view class="num">50.3</view>
+    </view>
+  </view>
+  </view>
+  <view class='container3'>
+		<view class='middle-item' hover-stay-time="150">
+			<image class="image_tupian_1" src="../image/食品偏好.png"></image>
+			<text class='text_2'>食品偏好</text>
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+		</view>
+
+		<view class='middle-item' hover-class="none" hover-stay-time="150">
+			<image class="image_tupian_1" src="../image/健身方向.png"> </image>
+      <text class='text_2'>健身方向</text>
+			<image class="image-jiantou" src="../image/箭头.png"></image>
+		</view>
+	</view>
+</view>

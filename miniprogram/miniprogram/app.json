@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+     "pages/home/home",
+     "pages/design/design",
+     "pages/p/p",
+     "pages/love/love",
+     "pages/message/message"
+  ],
+"window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTitleText": "燃烧的卡路里",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "selectedColor": "#F95A5F",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/image/f.png",
+        "selectedIconPath": "pages/image/f1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "pages/image/w (1).png",
+        "selectedIconPath": "pages/image/w.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
