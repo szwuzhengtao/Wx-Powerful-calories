@@ -2,8 +2,14 @@
 <text style="margin-left: 33%;">选择锻炼方向</text>
 <view class="K2">
 
+  <button  style="width: auto;height: auto;"
+  wx:for="{{diseaseList}}" wx:key="*this" data-index="{{index}}" class="{{item.checked ? 'active' : ''}}" bindtap="diseaseSwitch"  >{{item.diseaseName}}</button>
+
 
 </view>
+
+
+
 
 <view class="continue" bindtap="test">
 <text>继续</text>

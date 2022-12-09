@@ -13,9 +13,8 @@ Page({
      breakfast:"鸡蛋、玉米、牛奶",
      lunch:"凉拌黄瓜、爆炒熊猫",
      dinner:"蒸熊掌、红烧老虎、卤狮子",
-     elseeat:"番茄炒鸡、包子菜",
-     d:{},
-     b:{}
+     extraFood:"番茄炒鸡、包子菜",
+     hadex:[{ex:"跑步",ka:114},{ex:"跳绳",ka:241}]
   },
   // 事件处理函数
   bindViewTap() {
@@ -75,13 +74,16 @@ getfood: function(){
       header: {
         'content-type':  'application/json'
       },
-      success: function(res) {
+      success: function(res:any) {
        
-          that.setData({   
-            mnue : res.data,
+          that.setData({ 
+            breakfast:res.data.data.recipe.breakfast,
+            lunch:res.data.data.recipe.lunch,
+            dinner:res.data.data.recipe.dinner,
+            extraFood:res.data.data.recipe.extraFood,
           }) 
           console.log(res.data)
-        
+
        
       },
       fail: function() {
@@ -103,10 +105,10 @@ geteat: function(){
       header: {
         'content-type':  'application/json'
       },
-      success: function(res) {
+      success: function(res:any) {
        
           that.setData({   
-           d:res.data,
+           caneat:res.data.data,
           }) 
           console.log(res.data)
         

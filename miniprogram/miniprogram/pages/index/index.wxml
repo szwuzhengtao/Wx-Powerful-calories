@@ -2,7 +2,7 @@
   <view class="K1" style="display: flex;">
    <view class="K2" style="margin-left: 1%;">
    <text>饮食摄入</text>
-   <view class="num1">{{d.data}}</view>
+   <view class="num1">{{caneat}}</view>
   </view>
 
   <view class="circle">
@@ -60,10 +60,10 @@
   <text>合计： {{all}}卡</text>
   </view>
 
-  <view class="todaylast" style="display: flex;">
+  <view class="todaylast" style="display: flex;border: solid;">
   
   <view class="rice">
-    <view class="last2" style="display: flex;">
+    <view class="last2" style="display: flex;border: solid;">
     <image mode="widthFix" src="../image/iconPark-bread 2@1x.png"></image>
     <text>早餐</text>
   </view>
@@ -85,19 +85,43 @@
   </view>
 
   <view class="rice2" bindtap="test">
-   <text >{{mnue.data.recipe.breakfast}}</text>
+   <text wx:if="{{breakfast!=null}}">{{breakfast}}</text>
+   <text wx:else>无</text>
   <view class="line"></view>
-<text >{{mnue.data.recipe.lunch}}</text>
+<text wx:if="{{lunch!=null}}">{{lunch}}</text>
+<text wx:else>无</text>
 <view class="line"></view>
-<text >{{mnue.data.recipe.dinner}}</text>
+<text wx:if="{{dinner!=null}}">{{dinner}}</text>
+<text wx:else>无</text>
 <view class="line"></view>
-<text >{{mnue.data.extra.extraFood}}</text>
+<text wx:if="{{extraFood!=null}}">{{extraFood}}</text>
+<text wx:else>无</text>
 <view class="line"></view>
   </view>
   </view>
 </view>
+<!--新增今日运动-->
+ <view class="todayex" >
+  <view class="todayeat" style="display: flex;">
+  <image class="todayeati"  mode="widthFix" style="margin-left: 8%;" src="../image/iconPark-lightning@1x.png"></image>
+  <text >今日运动</text>
+  <navigator style="text-align: center;margin-left: 28%;margin-top: 7%;width: 30%;" url="../love/love">
+  <image style="width:17%;"mode="widthFix" src="../image/ze-plus@1x.png "></image>
+</navigator>
+</view>
 
- 
+<view class="all">
+  <text>合计： {{all}}卡</text>
+  </view>
+
+<view class="J">
+<view class="K22" wx:for="{{hadex}}" wx:for-item='item'>
+<text class="t1">{{item.ex}}</text>
+<text class="t2">{{item.ka}}千卡</text>
+</view>
+
+</view>
+ </view>
  <!--昨日记录-->
  <view class="lastday">
   <view class="todayeat" style="display: flex;">

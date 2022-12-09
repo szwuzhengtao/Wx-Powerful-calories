@@ -8,6 +8,10 @@
   padding-bottom: 13%;
   border-radius: 35rpx;
   border: solid;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .continue{
@@ -26,11 +30,16 @@
   color: #FFFFFF;
 }
 
-.k{
-  height: 40rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid;
-}
 
+
+/**            --------------*/
+button{
+  border-radius:40rpx;
+  font-size:30rpx;
+  background-color:rgba(255,255,255,1);
+  border:2rpx solid #caccce;color:#8a8e99;
+  text-align:left;
+  margin-top: 10rpx;
+}
+button::after{border:none}
+button.active{background-color:#009ee6;border:2rpx solid #009ee6;color:#fff}
