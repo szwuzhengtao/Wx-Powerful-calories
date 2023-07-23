@@ -9,9 +9,9 @@
     <view class="t">还可以摄入</view>
     <view style="display: flex;">
     <image mode="widthFix" style="width: 70rpx;margin-left: 10%;" src="../image/if-fire-burn@1x.png"></image>
-    <view class="t1">{{b.data-d.data}}</view>
+    <view style="margin-top:7%;margin-left: 5%;">{{caneat-RcoEat}}</view>
     </view>
-    <text>推荐摄入量{{b.data}}卡</text>
+    <text>推荐摄入量{{RcoEat}}卡</text>
   </view>
 
   <view class="K2" >
@@ -22,23 +22,23 @@
   </view>
 
   <view class="last" style="display: flex;">
-  <view class="last1" >  
+  <view class="last1" bindtap="gotoserchp" data-id="0">  
    <image mode="widthFix" src="../image/iconPark-bread@1x.png"></image>
    <text>+早餐</text>
   </view>
-  <view  class="last1">  
+  <view  class="last1" bindtap="gotoserchp" data-id="1">  
    <image mode="widthFix" src="../image/iconPark-noodles@1x.png"></image>
    <text>+午餐</text>
   </view>
-  <view  class="last1">  
+  <view  class="last1" bindtap="gotoserchp" data-id="2">  
    <image mode="widthFix" src="../image/iconPark-nutrition@1x.png"></image>
    <text>+晚餐</text>
   </view>
-  <view  class="last1">  
+  <view  class="last1" bindtap="gotoserchp" data-id="3">  
    <image mode="widthFix" src="../image/iconPark-apple-one@1x.png"></image>
    <text>+加餐</text>
   </view>
-  <view  class="last1">  
+  <view  class="last1"  bindtap="gotoserchex">  
    <image mode="widthFix" src="../image/if-runner-alt-1@1x.png"></image>
    <text>+运动</text>
   </view>
@@ -60,10 +60,10 @@
   <text>合计： {{all}}卡</text>
   </view>
 
-  <view class="todaylast" style="display: flex;border: solid;">
+  <view class="todaylast" style="display: flex;">
   
   <view class="rice">
-    <view class="last2" style="display: flex;border: solid;">
+    <view class="last2" style="display: flex;">
     <image mode="widthFix" src="../image/iconPark-bread 2@1x.png"></image>
     <text>早餐</text>
   </view>
@@ -105,7 +105,7 @@
   <view class="todayeat" style="display: flex;">
   <image class="todayeati"  mode="widthFix" style="margin-left: 8%;" src="../image/iconPark-lightning@1x.png"></image>
   <text >今日运动</text>
-  <navigator style="text-align: center;margin-left: 28%;margin-top: 7%;width: 30%;" url="../love/love">
+  <navigator style="text-align: center;margin-left: 28%;margin-top: 7%;width: 30%;" url="../serchex/serchex">
   <image style="width:17%;"mode="widthFix" src="../image/ze-plus@1x.png "></image>
 </navigator>
 </view>
@@ -124,7 +124,7 @@
  </view>
  <!--昨日记录-->
  <view class="lastday">
-  <view class="todayeat" style="display: flex;">
+  <view class="todayeat" style="display: flex;" bindtap="gotorecord">
   <text style="font-size: 35rpx;margin-top: 2%;margin-left: 10%;">昨日记录</text>
   <text style="margin-left: 50%; font-size: 30rpx;margin-top: 3%;">详情</text>
   <image style="width:5%;margin-top: 3.5%;"mode="widthFix" src="../image//ze-play@1x.png"></image>

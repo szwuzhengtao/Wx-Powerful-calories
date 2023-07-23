@@ -10,9 +10,9 @@
 </view>
 
 <view class="J">
-<view class="K2" wx:for="{{mnue.data.bf}}" wx:for-item='item'>
-<text class="t1">{{item}}</text>
-<text class="t2">{{p2}}g</text>
+<view class="K2" wx:for="{{breakfast}}" wx:for-item='item'>
+<text class="t1">{{item.eat}}</text>
+<text class="t2">{{item.ka}}g</text>
 <image mode="widthFix" style="width: 10%;margin-left: 20%;" src="../image/ze-arrow@1x.png"></image>
 </view>
 
@@ -35,9 +35,9 @@
 
 <view class="J">
 
-<view class="K2" style=" border:#31525B 10rpx solid;" wx:for="{{mnue.data.lunch}}" wx:for-item='item'>
-<text class="t1">{{item}}</text>
-<text class="t2">{{p1}}g</text>
+<view class="K2" style=" border:#31525B 10rpx solid;" wx:for="{{lunch}}" wx:for-item='item'>
+<text class="t1">{{item.eat}}</text>
+<text class="t2">{{item.ka}}g</text>
 <image mode="widthFix" style="width: 10%;margin-left: 10%;" src="../image/ze-arrow@1x.png"></image>
 </view>
 </view>
@@ -58,9 +58,9 @@
 </view>
 
 <view class="J">
-<view class="K2" style=" border:#F76566 10rpx solid;"wx:for="{{mnue.data.dinner}}" wx:for-item='item'>
-<text class="t1">{{item}}</text>
-<text class="t2">{{p2}}g</text>
+<view class="K2" style=" border:#F76566 10rpx solid;"wx:for="{{dinner}}" wx:for-item='item'>
+<text class="t1">{{item.eat}}</text>
+<text class="t2">{{item.ka}}g</text>
 <image mode="widthFix" style="width: 10%;margin-left: 20%;" src="../image/ze-arrow@1x.png"></image>
 </view>
 

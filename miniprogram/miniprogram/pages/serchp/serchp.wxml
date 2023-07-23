@@ -1,0 +1,53 @@
+<!--pages/serchp/serchp.wxml-->
+<form  bindsubmit="serch" >
+<view class="search-left" style="display: flex; align-items: center;">
+    <button form-type="submit" style="width: 15%;padding: 0%; border-radius: 35rpx;" >
+    <image src="../image/mb-search@1x.png"></image>
+   </button>
+    <input type="text" name='t' placeholder="单行输入"/>
+
+  </view>
+</form>
+  
+<view wx:if="{{focus}}">
+<!--历史-->
+<view style="display: flex;">
+<view style="margin-left: 5%;"></view>
+  <view class="history" wx:for="{{history}}" wx:for-item='item'>
+  <text>{{item.p}}</text>  
+  </view>
+</view>
+<!--推荐加餐-->
+<view class="K1">
+<text>推荐加餐</text>
+<view class="line"></view>
+
+<view class="recommend" wx:for="{{recommend}}" wx:for-item='item' wx:for-index="index">
+<text style="padding-left: 7%;font-size: 50rpx;">{{index}}</text>
+<image mode="widthFix" src="{{item.p}} "></image>
+<view>
+<text style="font-size: 40rpx;">{{item.name}}\n</text>
+<text>{{item.ka}}/100g</text>
+</view>
+<image bindtap="add" style="width: 10%;margin-right: 2%;" mode="widthFix"src="../image/ze-plus@1x.png"></image>
+</view>
+
+</view>
+
+</view>
+<!--搜完后-->
+<view wx:if="{{!focus}}">
+<view wx:if="{{get.name}}">
+  <view class="recommend" style="width: 80%;margin-left: 10%;">
+<image style="margin-left: 10%;" mode="widthFix" src="{{get.p}} "></image>
+<view>
+<text style="font-size: 40rpx;">{{get.name}}\n</text>
+<text style="font-size: 30rpx;">{{get.ka}}/100g</text>
+</view>
+<image bindtap="add" style="width: 10%;margin-right: 2%;" mode="widthFix"src="../image/ze-plus@1x.png"></image>
+</view>
+</view>
+<view wx:else style="margin-top: 20%;">
+<text style="margin-left: 10%;">抱歉，暂无数据</text>
+</view>
+</view>

@@ -1,0 +1,51 @@
+<!--pages/record/record.wxml-->
+<view class="yesterodayex2" >
+  <view class="yesterdaysport" style="display: flex;">
+  <image class="yesterdaysporti"  mode="widthFix" style="margin-left: 8%;" src="../image/iconPark-nutrition Copy@1x.png"></image>
+  <text style="margin-left: 10%;">饮食</text>
+  </view>
+  <view class="line"></view>
+<view class="all">
+  <text>合计： {{all0}}卡</text>
+  </view>
+  <view class="J">
+ <view class="K1" >
+ <text class="t1"> 早餐</text>
+ <text  class ="t3" wx:if="{{breakfast!=null}}">{{breakfast}}</text>
+ <text wx:else>无</text>
+</view>
+<view class="K1" >
+ <text class="t1"> 中餐</text>
+ <text class ="t3" wx:if="{{lunch!=null}}">{{lunch}}</text>
+<text wx:else>无</text>
+</view>
+<view class="K1" >
+ <text class="t1"> 晚餐</text>
+ <text class ="t3" wx:if="{{dinner!=null}}">{{dinner}}</text>
+<text wx:else>无</text>
+</view>
+<view class="K1" >
+ <text class="t1"> 加餐</text>
+ <text class ="t3" wx:if="{{extraFood!=null}}">{{extraFood}}</text>
+<text wx:else>无</text>
+</view>
+</view>
+</view>
+<view class="yesterodayex" >
+  <view class="yesterdaysport" style="display: flex;">
+  <image class="yesterdaysporti"  mode="widthFix" style="margin-left: 8%;" src="../image/iconPark-lightning@1x.png"></image>
+  <text style="margin-left: 10%;">运动</text>
+</view>
+<view class="line"></view>
+<view class="all">
+  <text>合计： {{all}}卡</text>
+  </view>
+
+<view class="J">
+<view class="K2" wx:for="{{hadex}}" wx:for-item='item'>
+<text class="t1">{{item.ex}}</text>
+<text class="t2">{{item.ka}}千卡</text>
+</view>
+
+</view>
+ </view>

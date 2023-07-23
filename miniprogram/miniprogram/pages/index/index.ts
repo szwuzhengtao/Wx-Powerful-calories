@@ -14,7 +14,8 @@ Page({
      lunch:"凉拌黄瓜、爆炒熊猫",
      dinner:"蒸熊掌、红烧老虎、卤狮子",
      extraFood:"番茄炒鸡、包子菜",
-     hadex:[{ex:"跑步",ka:114},{ex:"跳绳",ka:241}]
+     hadex:[{ex:"跑步",ka:114},{ex:"跳绳",ka:241}],
+     id:-1
   },
   // 事件处理函数
   bindViewTap() {
@@ -32,6 +33,7 @@ Page({
     this.getfood();
     this.geteat();
     this.getka();
+    this.getex();
   },
   onshow(){
     
@@ -60,11 +62,28 @@ Page({
   },
 
 test: function () {
+  
 	wx.navigateTo({
       url: "../p/p"
     })
 },
 
+gotoserchp:function(e:any){
+  var id = e.currentTarget.dataset.id;
+  wx.navigateTo({
+    url:"../serchp/serchp?id="+id,
+  }
+
+  )
+}
+,
+gotoserchex:function(){
+  wx.navigateTo({
+    url:"../serchex/serchex"
+  }
+
+  )
+},
 getfood: function(){
   var app=getApp();
   var that = this;
@@ -153,6 +172,43 @@ getka: function(){
     })
 
 },
+
+getex: function(){
+  var that = this;
+  var app=getApp();
+    wx.request({
+      url: 'http://localhost:8080/users/Excise/'+app.globalData.userId.toString(),
+      method: 'GET', 
+      header: {
+        'content-type':  'application/json'
+      },
+      success: function(res) {
+       
+          that.setData({   
+           b : res.data,
+          }) 
+          console.log(res.data)
+        
+       
+      },
+      fail: function() {
+        wx.showToast({
+          title: "网络连接失败",
+          duration: 3000
+        })
+ 
+      },
+    })
+
+},
+gotorecord:function(){
+  wx.navigateTo({
+    url:"../record/record"
+  }
+
+  )
+},
+
 getrecord:function(res){
   var that = this;
   var app=getApp();

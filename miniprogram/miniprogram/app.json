@@ -6,7 +6,12 @@
      "pages/design/design",
      "pages/p/p",
      "pages/love/love",
-     "pages/message/message"
+     "pages/message/message",
+     "pages/serchp/serchp",
+     "pages/serchex/serchex",
+     "pages/foodmessage/foodmessage",
+     "pages/record/record"
+
   ],
 "window": {
     "backgroundTextStyle": "light",

@@ -95,10 +95,13 @@ Page({
         header: {
           'content-type':  'application/json'
         },
-        success: function(res) {
+        success: function(res:any) {
          
             that.setData({   
-              mnue : res.data,
+              breakfast : res.data.data.bf,
+              lunch:res.data.data.lunch,
+              dinner:res.data.data.dinner,
+              
             }) 
             console.log(res.data)
           

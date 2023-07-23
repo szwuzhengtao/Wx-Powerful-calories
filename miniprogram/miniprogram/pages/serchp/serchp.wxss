@@ -1,0 +1,75 @@
+/* pages/serchp/serchp.wxss */
+/**index.wxss**/
+
+.search-left{
+  background-color: #fff;
+  border-radius: 35rpx;
+  padding-right: 40rpx;
+  box-sizing: border-box;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+  box-shadow: 0rpx 2rpx 5rpx 5rpx #c8c3c3;
+}
+.search-left image{
+  width: 48rpx;
+  height: 48rpx;
+  padding: 10rpx 20rpx;
+  vertical-align: middle;
+  
+}
+.search-left input{
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 88rpx);
+}
+
+.history{
+  border-radius: 35rpx;
+  width: auto;
+  height: auto;
+  background-color: #BBBBBB;
+  margin-left: 2%;
+  padding-left: 2%;
+  padding-right:2% ;
+  margin-top: 4%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.history text{
+  font-size: 32rpx;
+  color: rgba(16, 16, 16, 0.62);
+}
+
+.K1{
+  background-color: #fff;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 25%;
+}
+.K1 text{
+  color: rgba(16, 16, 16, 0.62);
+  font-size: 32rpx;
+}
+.line{
+  width: 100%;
+  height: 2rpx;
+  background: rgba(187, 187, 187, 1);
+}
+.recommend{
+  margin-top: 5%;
+  width: 100%;
+  height: 200rpx;
+  border-radius: 35rpx;
+  box-shadow: 0rpx 2rpx 5rpx 5rpx #c8c3c3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recommend image{
+   width: 20%;
+}
+.recommend text{
+  color: black;
+}

@@ -115,7 +115,6 @@
   margin-left: 2%;
   width: 25%;
   height: 90%;
-  border: solid;
 }
 
 .last2 {

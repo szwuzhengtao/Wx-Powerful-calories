@@ -68,18 +68,15 @@
    border:#F8EFEA 10rpx solid;
    display: flex;
    align-items: center;
-   word-break:keep-all;
-   white-space:nowrap;
- 
+   justify-content: space-between;
 }
 
 .t1{
  margin-left:7% ;
 }
 .t2{
-  margin-left:20% ;
+  margin-left: 20%;
   font-size: 30rpx;
-  
 }
 
 .J{

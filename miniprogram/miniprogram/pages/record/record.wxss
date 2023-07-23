@@ -1,0 +1,100 @@
+/* pages/record/record.wxss */
+/* 今日运动*/
+Page{
+  background-color: rgba(147, 210, 243, 0.08);
+}
+.yesterodayex{
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-top: 10%;
+  width: 86%;
+  border-radius: 35rpx;
+  background-color: white;
+}
+.yesterodayex2{
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-top: 8%;
+  width: 86%;
+  border-radius: 35rpx;
+  background-color: white;
+}
+.yesterdaysport{
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+.yesterdaysport text{
+  margin-top: 4%;
+  font-size: 38rpx;
+}
+.yesterdaysporti{
+  margin-left: 10%;
+  width: 10%;
+  margin-top: 3%;
+}
+.line {
+  width: 76%;
+  height: 1rpx;
+  margin-left: 12%;
+  justify-content: center;
+  background-color: #BBBBBB;
+}
+.line1 {
+  width: 4%;
+  height: 25rpx;
+  margin-left: 3%;
+  justify-content: center;
+}
+.all{
+  height: 3%;
+  padding-bottom: 2%;
+}
+.all text{
+  margin-left: 65%;
+  font-size: 25rpx;
+
+}
+.J{
+  width: 80%;
+  height: 80%;
+  margin-top: 2%;
+  padding-bottom: 5%;
+
+}
+.K1{
+  width: 105%;
+  margin-left: 8%;
+  height: 70rpx;
+  border-radius: 35rpx;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  word-break:keep-all;
+  justify-content:space-between;
+}
+.K2{
+  width: 105%;
+  background-color: #EDF29C;
+  margin-left: 8%;
+  height: 70rpx;
+  border-radius: 35rpx;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  word-break:keep-all;
+  white-space:nowrap;
+}
+.t1{
+  margin-left:7% ;
+  margin-top: 0%;
+  font-size: 30rpx;
+ }
+ .t2{
+   margin-left: 60%;
+   font-size: 30rpx;
+ }
+ .t3{
+  margin-left: 20%;
+  font-size: 30rpx;
+}
